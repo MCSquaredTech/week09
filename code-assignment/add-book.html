@@ -23,12 +23,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="books.html">Books</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,9 +39,41 @@
                 </ul>   
             </div>
         </nav>
-
+        <div class="row">
+            <div class="col">
+                <form id="add-book">
+                    <div class="form-group">
+                      <label for="bookISBN">ISBN Number</label>
+                      <input type="text" class="form-control" id="bookISBN" aria-describedby="ISBN-Number" placeholder="ISBN Number">
+                      <small id="ISBN-Number" class="form-text text-muted">ISBN-10 Number</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="bookPubDate">Publish Date</label>
+                      <input type="text" class="form-control" id="bookPubDate" placeholder="January 1, 2019">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookTitle">Title</label>
+                        <input type="text" class="form-control" id="bookTitle" placeholder="Angular in 30 years">
+                      </div>
+                      <div class="form-group">
+                        <label for="bookURL">URL Path</label>
+                        <input type="text" class="form-control" id="bookURL" placeholder="https://amazon.com/">
+                      </div>
+                      <div class="form-group">
+                        <label for="bookAuthor">Author</label>
+                        <input type="text" class="form-control" id="bookAuthor" placeholder="Mark Twain">
+                      </div>
+                      <div class="form-group">
+                        <label for="bookPrice">Price</label>
+                        <input type="text" class="form-control" id="bookPrice" placeholder="$20.98">
+                      </div>
+                    <button id="bookSubmit" type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./node_modules/jquery/dist/jquery.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./app/app.js"></script>
 </html>

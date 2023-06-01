@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist//css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-sheet.css">
 </head>
 <body>
     <div class="container">
@@ -23,32 +24,73 @@
                     <li class="nav-item">
                         <a class="nav-link" href="books.html">Books</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Item One</a>
-                            <a class="dropdown-item" href="#">Item Two</a>
-                            <a class="dropdown-item" href="#">Item Three</a>
+                            <a class="dropdown-item" href="https://validator.w3.org/" target="_blank">HTML Validator</a>
+                            <a class="dropdown-item" href="https://www.css-validator.org/" target="_blank">CSS Validator</a>
+                            <a class="dropdown-item" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Resources for Devlopers</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Item Four</a>
+                            <a class="dropdown-item" href="https://codepen.io" target="_blank">CodePen</a>
                         </div>
                     </li>
                 </ul>
                 </ul>   
             </div>
         </nav>
-
+        <div class="row" style="padding: 5px; margin:2px;">
+            <table id="mustread" class="table table-primary table-hover">
+                <tr>
+                    <th>ISBN</th>
+                    <th>Publish Date</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>1939924529</td>
+                    <td>Janyary 18,2016</td>
+                    <td><a href="https://amzn.to/3qnWK7G" target="_blank">LinkedIn in 30 Minutes</a></td>
+                    <td>Angela Rose</td>
+                    <td>$11.00</td>
+                </tr>
+                <tr>
+                    <td>1492055751</td>
+                    <td>August 24, 2021</td>
+                    <td><a href="https://amzn.to/3C5VeJS" target="_blank">JavScript Cookbook: Programmming the Web</a></td>
+                    <td>Matthew MacDonald and Adam D Scott</td>
+                    <td>$36.00</td>
+                </tr>
+                <tr>
+                    <td>1449397220</td>
+                    <td>Janyary 18,2011</td>
+                    <td><a href="https://amzn.to/45CJr3b" target="_blank">jQuery Pocket Reference</a></td>
+                    <td>David Flanagan</td>
+                    <td>$15.58</td>
+                </tr>
+                <tr>
+                    <td>9781720043997</td>
+                    <td>September 14,2018</td>
+                    <td><a href="https://amzn.to/3OPoxrE" target="_blank">The Road to React</a></td>
+                    <td>Robin Wieruch</td>
+                    <td>$25.95</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary float-right" href="add-book.html">
+                    <a href="add-book.html" class="btn-style">Add Book</a>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./node_modules/jquery/dist/jquery.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./app/app.js"></script>
 </html>
