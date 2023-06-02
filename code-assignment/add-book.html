@@ -41,7 +41,7 @@
         </nav>
         <div class="row">
             <div class="col">
-                <form class="add-book" action="books.html">
+                <form class="add-book" >
                     <div class="form-group">
                       <label for="ISBN">ISBN Number</label>
                       <input type="text" class="form-control ISBN" name="ISBN" aria-describedby="ISBN-Number" placeholder="ISBN Number">
@@ -67,13 +67,14 @@
                         <label for="bookPrice">Price</label>
                         <input type="text" class="form-control" name="Price" placeholder="$20.98">
                       </div>
-                    <input id="Submit" type="submit" value="Submit" class="btn btn-primary" />
+                    <button id="addbook" type="submit" value="Submit" class="btn btn-primary"  onclick="">Submit</button>
                   </form>
             </div>
         </div>
     </div>
+    
 </body>
 <script src="./node_modules/jquery/dist/jquery.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<script src="./app/app.js"></script>
+<script src="./app/app.js" type="module"></script>
 </html>
