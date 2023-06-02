@@ -29,11 +29,11 @@
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.css-validator.org/" target="_blank">CSS Validation Sevice</a>
-                            <a class="dropdown-item" href="#">Item Two</a>
-                            <a class="dropdown-item" href="#">Item Three</a>
+                            <a class="dropdown-item" href="https://validator.w3.org/" target="_blank">HTML Validator</a>
+                            <a class="dropdown-item" href="https://www.css-validator.org/" target="_blank">CSS Validator</a>
+                            <a class="dropdown-item" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Resources for Devlopers</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Item Four</a>
+                            <a class="dropdown-item" href="https://codepen.io" target="_blank">CodePen</a>
                         </div>
                     </li>
                 </ul>   
@@ -41,33 +41,33 @@
         </nav>
         <div class="row">
             <div class="col">
-                <form id="add-book">
+                <form class="add-book" action="books.html">
                     <div class="form-group">
-                      <label for="bookISBN">ISBN Number</label>
-                      <input type="text" class="form-control" id="bookISBN" aria-describedby="ISBN-Number" placeholder="ISBN Number">
-                      <small id="ISBN-Number" class="form-text text-muted">ISBN-10 Number</small>
+                      <label for="ISBN">ISBN Number</label>
+                      <input type="text" class="form-control ISBN" name="ISBN" aria-describedby="ISBN-Number" placeholder="ISBN Number">
+                      <small id="ISBN" class="form-text text-muted">ISBN-10 Number</small>
                     </div>
                     <div class="form-group">
                       <label for="bookPubDate">Publish Date</label>
-                      <input type="text" class="form-control" id="bookPubDate" placeholder="January 1, 2019">
+                      <input type="text" class="form-control" name="PubDate" placeholder="January 1, 2019">
                     </div>
                     <div class="form-group">
                         <label for="bookTitle">Title</label>
-                        <input type="text" class="form-control" id="bookTitle" placeholder="Angular in 30 years">
+                        <input type="text" class="form-control" name="Title" placeholder="Angular in 30 years">
                       </div>
                       <div class="form-group">
                         <label for="bookURL">URL Path</label>
-                        <input type="text" class="form-control" id="bookURL" placeholder="https://amazon.com/">
+                        <input type="text" class="form-control" name="URL" placeholder="https://amazon.com/">
                       </div>
                       <div class="form-group">
                         <label for="bookAuthor">Author</label>
-                        <input type="text" class="form-control" id="bookAuthor" placeholder="Mark Twain">
+                        <input type="text" class="form-control" name="Author" placeholder="Mark Twain">
                       </div>
                       <div class="form-group">
                         <label for="bookPrice">Price</label>
-                        <input type="text" class="form-control" id="bookPrice" placeholder="$20.98">
+                        <input type="text" class="form-control" name="Price" placeholder="$20.98">
                       </div>
-                    <button id="bookSubmit" type="submit" class="btn btn-primary">Submit</button>
+                    <input id="Submit" type="submit" value="Submit" class="btn btn-primary" />
                   </form>
             </div>
         </div>
