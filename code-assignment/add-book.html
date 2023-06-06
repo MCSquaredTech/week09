@@ -41,40 +41,40 @@
         </nav>
         <div class="row">
             <div class="col">
-                <form class="add-book" >
+                <form class="add-book" action="books.html">
                     <div class="form-group">
                       <label for="ISBN">ISBN Number</label>
-                      <input type="text" class="form-control ISBN" name="ISBN" aria-describedby="ISBN-Number" placeholder="ISBN Number">
+                      <input type="text" class="form-control" name="ISBN" aria-describedby="ISBN-Number" placeholder="ISBN Number">
                       <small id="ISBN" class="form-text text-muted">ISBN-10 Number</small>
                     </div>
                     <div class="form-group">
-                      <label for="bookPubDate">Publish Date</label>
+                      <label for="PubDate">Publish Date</label>
                       <input type="text" class="form-control" name="PubDate" placeholder="January 1, 2019">
                     </div>
                     <div class="form-group">
-                        <label for="bookTitle">Title</label>
+                        <label for="Title">Title</label>
                         <input type="text" class="form-control" name="Title" placeholder="Angular in 30 years">
                       </div>
                       <div class="form-group">
-                        <label for="bookURL">URL Path</label>
+                        <label for="URL">URL Path</label>
                         <input type="text" class="form-control" name="URL" placeholder="https://amazon.com/">
                       </div>
                       <div class="form-group">
-                        <label for="bookAuthor">Author</label>
+                        <label for="Author">Author</label> 
                         <input type="text" class="form-control" name="Author" placeholder="Mark Twain">
                       </div>
                       <div class="form-group">
-                        <label for="bookPrice">Price</label>
+                        <label for="Price">Price</label>
                         <input type="text" class="form-control" name="Price" placeholder="$20.98">
                       </div>
-                    <button id="addbook" type="submit" value="Submit" class="btn btn-primary"  onclick="">Submit</button>
+                    <button type="submit" id="addbook" class="btn btn-primary">Submit</button>
                   </form>
             </div>
         </div>
     </div>
-    
+    <script src="./app/app.js" type="module"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
-<script src="./node_modules/jquery/dist/jquery.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<script src="./app/app.js" type="module"></script>
+
 </html>
